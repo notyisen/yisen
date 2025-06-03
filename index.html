@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yisen the Wandering Bard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Yisen the Wandering Bard</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Yisen</h2>
+      <p>Yisen, the Wandering Bard, is a legendary figure whose music soothes the soul and tells tales of ancient lore. His melodies echo across the land, uniting people through harmony and story.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <img src="images/yisen1.jpg" alt="Yisen Playing Lute" />
+        <img src="images/yisen2.jpg" alt="Yisen Traveling" />
+      </div>
+    </section>
+
+    <section id="music">
+      <h2>Music</h2>
+      <audio controls>
+        <source src="media/yisen_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="contact">
+      <h2>Contact the Bard</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p id="formStatus"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yisen Fan Community. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
